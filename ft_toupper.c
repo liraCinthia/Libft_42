@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 09:38:06 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/19 20:00:04 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/10/19 14:16:10 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/10/19 15:52:41 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include "libft.h"
-#include <string.h>
+#include <ctype.h>
 #include <stdio.h>
 
-size_t ft_strlen(const char *s)
+int	ft_toupper(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	if (c >= 97 && c <= 122) // considerando a tabela ascii verificação se for minuscula
 	{
-		i++;
+		return (c - 32); // subtração considerando a tabela ascii, ou seja, 122 - 65 = 32 para ir para as maisculas
 	}
-	return (i);
+	return (c);
 }
 
-// int main()
-// {
-// 	printf("%zu\n", ft_strlen("segunda"));
-// 	printf("função original: %lu\n", strlen("segunda"));
-// 	return (0);
-// }
+int main()
+{
+	printf("%c\n", ft_toupper(66));
+	printf("função original: %c\n", toupper(66));
+	return (0);
+}
+
+//usada para converter um caractere em maiúsculo (upecase)
