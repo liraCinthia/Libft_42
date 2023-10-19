@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:47:28 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/16 16:48:32 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:54:27 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,3 @@ int main()
 	printf("função original: %d\n", isdigit('8'));
 	return (0);
 }
-
-// verifica se um caractere é um dígito numérico

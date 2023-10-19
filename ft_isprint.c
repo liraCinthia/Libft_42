@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:45:04 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/16 17:04:02 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:54:03 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,3 @@ int main()
 	printf("função original: %d\n", isprint('1'));
 	return (0);
 }
-
-//verifica se é um caractere imprimível, incluindo o espaço

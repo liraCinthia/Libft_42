@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 14:27:10 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/18 16:56:02 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/10/18 15:47:12 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/10/18 21:15:52 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include "libft.h"
-#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
-int	ft_isalnum(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	size_t			i;
+	unsigned char	*p;
+	unsigned char	v;
+
+	i = 0;
+	p = s;
+	v = c;
+	while (i < n)
 	{
-		return (8);
+		p[i] = v;
+		i++;
 	}
-	return (0);
+	return (p);
 }
 
-int main()
-{
-	printf("%d\n", ft_isalnum('A'));
-	printf("função original: %d\n", isalnum('A'));
-	return (0);
-}
+// int	main(void)
+// {
+//    char str[50] = "a bianca e perfeita";
+
+// //	ft_memset (str, 'a', 7);
+// 	memset(str, 'a', 7);
+// 	printf("função original: %s\n", str);
+
+//    return(0);
+// }

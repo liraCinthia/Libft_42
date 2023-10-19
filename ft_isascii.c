@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:03:48 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/16 16:28:25 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:55:08 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,3 @@ int main()
 	printf("função original: %d\n", isascii(130));
 	return (0);
 }
-
-//determina se um dado caractere é um caractere ASCII
