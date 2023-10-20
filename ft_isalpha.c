@@ -6,13 +6,12 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 09:55:52 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/18 16:55:34 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:51:49 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <ctype.h>
-#include <stdio.h>
 
 int	ft_isalpha(int c)
 {

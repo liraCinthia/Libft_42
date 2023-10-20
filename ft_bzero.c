@@ -6,16 +6,11 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 16:57:14 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/18 21:20:22 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 17:33:13 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <strings.h>
-#include <string.h>
-#include <stdio.h>
-
-void	*ft_memset(void *s, int c, size_t n);
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -24,11 +19,10 @@ void	ft_bzero(void *s, size_t n)
 
 int	main(void)
 {
-	char str[40] = "o raciocinio e lento";
+	char str[40] = "oraciocinioelento";
 	ft_bzero(str + 5, 6); // para verificar a partir da posição 5
 //	bzero(str, 7);
 	printf("função original: %s\n", str);
-
    return(0);
 }
 //A função bzero() apaga os dados nos n bytes de memória, começando na localização

@@ -6,13 +6,12 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:27:10 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/18 16:56:02 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:51:32 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <ctype.h>
-#include <stdio.h>
 
 int	ft_isalnum(int c)
 {

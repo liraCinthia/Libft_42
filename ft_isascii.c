@@ -6,13 +6,12 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:03:48 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/18 16:55:08 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:51:58 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <ctype.h>
-#include <stdio.h>
 
 int	ft_isascii(int c)
 {

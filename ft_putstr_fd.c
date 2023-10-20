@@ -1,42 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 15:47:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 13:52:25 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/10/20 14:48:28 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/10/20 17:41:55 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t			i;
-	unsigned char	*p;
-	unsigned char	v;
+	int		i;
 
 	i = 0;
-	p = s;
-	v = c;
-	while (i < n)
+	while (s[i])
 	{
-		p[i] = v;
+		write(fd, &s[i], 1);
 		i++;
 	}
-	return (p);
 }
-
-// int	main(void)
-// {
-//    char str[50] = "a bianca e perfeita";
-
-// //	ft_memset (str, 'a', 7);
-// 	memset(str, 'a', 7);
-// 	printf("função original: %s\n", str);
-
-//    return(0);
-// }
+int main()
+{
+	ft_putstr_fd("olaola", 1);
+	return (0);
+}

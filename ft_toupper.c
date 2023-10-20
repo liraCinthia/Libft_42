@@ -6,13 +6,12 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 14:16:10 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/19 15:52:41 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:53:00 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <ctype.h>
-#include <stdio.h>
 
 int	ft_toupper(int c)
 {

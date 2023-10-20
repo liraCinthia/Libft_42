@@ -1,42 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 15:47:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 13:52:25 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/10/20 17:35:18 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/10/20 18:53:35 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t			i;
-	unsigned char	*p;
-	unsigned char	v;
-
-	i = 0;
-	p = s;
-	v = c;
-	while (i < n)
-	{
-		p[i] = v;
-		i++;
-	}
-	return (p);
+	ft_putstr_fd(s, 1);
+	ft_putchar_fd('\n', 1);
 }
-
-// int	main(void)
-// {
-//    char str[50] = "a bianca e perfeita";
-
-// //	ft_memset (str, 'a', 7);
-// 	memset(str, 'a', 7);
-// 	printf("função original: %s\n", str);
-
-//    return(0);
-// }
+int main()
+{
+	ft_putendl_fd("aoba", 1);
+	return (0);
+}
+// insere uma quebra de linha no final da string

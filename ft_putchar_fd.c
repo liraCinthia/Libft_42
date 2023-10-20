@@ -6,11 +6,11 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:08:53 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/19 17:57:21 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:48:09 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)

@@ -1,42 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/18 15:47:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 13:52:25 by clira-ne         ###   ########.fr       */
+/*   Created: 2023/10/20 18:11:30 by clira-ne          #+#    #+#             */
+/*   Updated: 2023/10/20 18:26:09 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	size_t			i;
-	unsigned char	*p;
-	unsigned char	v;
-
-	i = 0;
-	p = s;
-	v = c;
-	while (i < n)
+	if (n >= '0' && n <= '9')
 	{
-		p[i] = v;
-		i++;
+		write(fd, &n, 1);
 	}
-	return (p);
 }
-
-// int	main(void)
-// {
-//    char str[50] = "a bianca e perfeita";
-
-// //	ft_memset (str, 'a', 7);
-// 	memset(str, 'a', 7);
-// 	printf("função original: %s\n", str);
-
-//    return(0);
-// }
+int main()
+{
+	ft_putnbr_fd('2', 1);
+	return (0);
+}

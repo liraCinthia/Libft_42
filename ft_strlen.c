@@ -6,13 +6,12 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 09:38:06 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/19 20:00:04 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:52:44 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 #include <string.h>
-#include <stdio.h>
 
 size_t ft_strlen(const char *s)
 {
