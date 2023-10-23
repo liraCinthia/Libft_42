@@ -6,12 +6,11 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:45:04 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 13:52:17 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:07:00 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
 
 int	ft_isprint(int c)
 {
@@ -19,12 +18,5 @@ int	ft_isprint(int c)
 	{
 		return (16384);
 	}
-	return (0);
-}
-
-int main()
-{
-	printf("%d\n", ft_isprint('1'));
-	printf("função original: %d\n", isprint('1'));
 	return (0);
 }

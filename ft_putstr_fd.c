@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 14:48:28 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 17:41:55 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:08:51 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,4 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-}
-int main()
-{
-	ft_putstr_fd("olaola", 1);
-	return (0);
 }

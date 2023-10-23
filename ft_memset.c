@@ -6,12 +6,11 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:47:12 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 13:52:25 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:07:20 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -29,14 +28,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (p);
 }
-
-// int	main(void)
-// {
-//    char str[50] = "a bianca e perfeita";
-
-// //	ft_memset (str, 'a', 7);
-// 	memset(str, 'a', 7);
-// 	printf("função original: %s\n", str);
-
-//    return(0);
-// }

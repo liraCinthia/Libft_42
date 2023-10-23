@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 18:11:30 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/20 18:26:09 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:08:29 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,4 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		write(fd, &n, 1);
 	}
-}
-int main()
-{
-	ft_putnbr_fd('2', 1);
-	return (0);
 }
