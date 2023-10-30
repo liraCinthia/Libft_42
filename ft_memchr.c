@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:20:40 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/26 16:18:18 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/30 13:23:30 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+//falta incluir na libft e concluir

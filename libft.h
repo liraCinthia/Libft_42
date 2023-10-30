@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 13:40:58 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/26 16:28:53 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/30 13:42:00 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <ctype.h>
 # include <bsd/string.h>
+# include <limits.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -31,7 +32,7 @@ void	ft_bzero(void *s, size_t n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
-// void	ft_putendl_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memset(void *s, int c, size_t n);

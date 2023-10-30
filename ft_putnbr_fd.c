@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 18:11:30 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/23 16:08:29 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/30 15:30:26 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,25 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n >= '0' && n <= '9')
+	int	min;
+
+	min = INT_MIN;
+	if (n == INT_MIN)
 	{
-		write(fd, &n, 1);
+		return (ft_putstr_fd("-2147483648", fd));
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+	{
+		ft_putchar_fd((char)(n + '0'), fd);
 	}
 }
