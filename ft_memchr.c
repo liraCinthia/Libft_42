@@ -6,7 +6,7 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 15:20:40 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/10/30 13:23:30 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/10/31 19:30:52 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,22 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	const char	*p;
+	unsigned char	*ptr;
+	size_t			i;
 
+	ptr = (unsigned char *)s;
 	i = 0;
-	p = s;
-	while (p[i] < n)
+	if (n == 0)
 	{
-		if (p[i] == c)
+		return (NULL);
+	}
+	while (i < n)
+	{
+		if (ptr[i] == (unsigned char)c)
 		{
-			return ((char *)p);
+			return (&((char *)s)[i]);
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
-//falta incluir na libft e concluir
