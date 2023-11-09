@@ -1,8 +1,4 @@
-HEADER = libft.h
-
 NAME = libft.a
-
-LIB = libft.a
 
 FILES = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 ft_isprint.c ft_memset.c ft_putchar_fd.c  ft_putnbr_fd.c ft_putstr_fd.c \
@@ -13,18 +9,18 @@ ft_itoa.c ft_strtrim.c ft_striteri.c ft_strmapi.c ft_substr.c ft_split.c \
 
 FILES_OBJ = $(FILES:.c=.o)
 
-all: $(FILES_OBJ) $(HEADER)
-	ar rcs $(LIB) $^
+all: $(NAME)
 
-$(NAME): all
+$(NAME): $(FILES_OBJ)
+	ar rcs $(NAME) $(FILES_OBJ)
 
 %.o: %.c
-	gcc -c $< -o $@ -Wall -Wextra -Werror
+	cc -c $< -o $@ -Wall -Wextra -Werror
 
 clean:
 	rm -f $(FILES_OBJ)
 
 fclean: clean
-	rm -f $(LIB)
+	rm -f $(NAME)
 
 re: fclean all
