@@ -6,19 +6,13 @@
 /*   By: clira-ne <clira-ne@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 13:40:58 by clira-ne          #+#    #+#             */
-/*   Updated: 2023/11/08 20:04:16 by clira-ne         ###   ########.fr       */
+/*   Updated: 2023/11/09 16:06:32 by clira-ne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdio.h> //tirar
 # include <unistd.h>
-# include <strings.h> //tirar
-# include <string.h> //tirar
-# include <ctype.h> //tirar
-# include <bsd/string.h> //tirar
-# include <limits.h> //tirar
 # include <stdlib.h>
 
 char	*ft_itoa(int n);
