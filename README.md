@@ -1,3 +1,8 @@
+#Libft Project#
+
+![image](https://github.com/user-attachments/assets/7f8d2dc6-5939-4de8-9fca-a0c901560074)
+![image](https://github.com/user-attachments/assets/f6e18254-7a09-461e-b989-48540e65269f)
+
 This project was developed at the 42 São Paulo school.
 The project is about coding a C library.
 This library will contain many general-purpose functions, and the project consists of understanding how these functions work. In this way, we learned how to create our own library and apply it to other school projects.
