@@ -25,7 +25,7 @@ Esta biblioteca conterá muitas funções de uso geral, no qual o projeto consis
 
 Durante o desenvolvimento do projeto aprendemos também sobre: alocação de memórias, vazamento de memória, compilação de um código fonte, makefile e argumentos de entrada.
 
-Para compilar a biblioteca, execute o seguinte comando:
+Para compilar a biblioteca, execute os seguintes comandos:
 ```
 git clone git@github.com:liraCinthia/Libft_42.git
 ```
